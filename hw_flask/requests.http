@@ -1,0 +1,63 @@
+###
+GET http://127.0.0.1:5000/
+
+###
+GET http://127.0.0.1:5000/healthcheck
+
+###
+POST http://127.0.0.1:5000/ad/
+Content-Type: application/json
+
+{
+  "title": "Sample Ad",
+  "description": "This is a sample advertisement.",
+  "owner": "John Doe"
+}
+
+###
+
+POST http://127.0.0.1:5000/ad/
+Content-Type: application/json
+
+{
+  "title": "Sample Ad 2",
+  "description": "This is a sample advertisement 2.",
+  "owner": "Doe John"
+}
+
+###
+POST http://127.0.0.1:5000/ad/
+Content-Type: application/json
+
+{
+  "title": "Sample Ad 3",
+  "description": "This is a sample advertisement 3.",
+  "owner": "Doe John 3"
+}
+
+###
+GET http://127.0.0.1:5000/ad/1
+
+###
+PATCH http://127.0.0.1:5000/ad/1
+Content-Type: application/json
+
+{
+  "title": "title 1",
+  "description": "description 1",
+  "owner": "owner 1"
+}
+
+###
+GET http://127.0.0.1:5000/ad/1
+
+###
+GET http://127.0.0.1:5000/ad/2
+
+###
+GET http://127.0.0.1:5000/ad/3
+
+###
+GET http://127.0.0.1:5000/ad/
+
+

@@ -25,9 +25,6 @@ RUN poetry install --no-root --no-dev
 # Копируем остальной код приложения
 COPY . /app
 
-# Устанавливаем переменную окружения для Flask
-ENV FLASK_APP=hw_flask/main.py
-
 # Открываем порт, на котором работает ваше приложение
 EXPOSE 5000
 
