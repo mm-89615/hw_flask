@@ -39,7 +39,7 @@ Content-Type: application/json
 GET http://127.0.0.1:5000/ad/1
 
 ###
-PATCH http://127.0.0.1:5000/ad/1
+PATCH http://127.0.0.1:5000/ad/3
 Content-Type: application/json
 
 {
@@ -60,4 +60,30 @@ GET http://127.0.0.1:5000/ad/3
 ###
 GET http://127.0.0.1:5000/ad/
 
+###
+DELETE http://127.0.0.1:5000/ad/2
 
+###
+GET http://127.0.0.1:5000/ad/2
+
+###
+POST http://127.0.0.1:5000/ad/
+Content-Type: application/json
+
+{
+  "title": "Sample Ad 4",
+  "description": "This is a sample advertisement 4.",
+  "owner": "Doe John 4"
+}
+
+###
+GET http://127.0.0.1:5000/ad/11
+
+###
+POST http://127.0.0.1:5000/ad/
+Content-Type: application/json
+
+{
+  "description": "This is a sample advertisement 4.",
+  "owner": "Doe John 4"
+}
